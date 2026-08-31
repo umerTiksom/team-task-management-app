@@ -6627,3 +6627,567 @@ Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached
 
 
 Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Started GET "/" for ::1 at 2026-08-31 11:25:04 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (64.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TaskManagementApp'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | GC: 0.0ms)
+Completed 200 OK in 67ms (Views: 28.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 11:25:08 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2026-08-31 11:25:08 +0500
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Exists? (42.3ms)[0m  [1m[34mSELECT 1 AS one FROM "tasks" LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/index.html.erb:6
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:2
+  Rendered tasks/_task.html.erb (Duration: 15.4ms | GC: 0.0ms)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 114.9ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 115.9ms | GC: 0.0ms)
+Completed 200 OK in 139ms (Views: 45.1ms | ActiveRecord: 72.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/task-details" for ::1 at 2026-08-31 11:25:09 +0500
+Processing by TasksController#details as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/details.html.erb within layouts/application
+  Rendered tasks/details.html.erb within layouts/application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2026-08-31 11:25:10 +0500
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 6.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2026-08-31 11:25:10 +0500
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "tasks" LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/index.html.erb:6
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:2
+  Rendered tasks/_task.html.erb (Duration: 3.0ms | GC: 0.0ms)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 4.9ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/task-details" for ::1 at 2026-08-31 11:25:11 +0500
+Processing by TasksController#details as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/details.html.erb within layouts/application
+  Rendered tasks/details.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2026-08-31 11:25:11 +0500
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/tasks" for ::1 at 2026-08-31 11:25:41 +0500
+Processing by TasksController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "task" => {"tittle" => "task2", "description" => "create a dashboard for the task app ", "status" => "in-progress", "priority" => "medium"}, "commit" => "Create Task"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN /*action='create',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/controllers/tasks_controller.rb:35:in 'TasksController#create'
+  [1m[36mTask Create (51.8ms)[0m  [1m[32mINSERT INTO "tasks" ("created_at", "updated_at", "tittle", "description", "status", "priority") VALUES ('2026-08-31 06:25:41.285294', '2026-08-31 06:25:41.285294', 'task2', 'create a dashboard for the task app ', 'in-progress', 'medium') RETURNING "id" /*action='create',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/controllers/tasks_controller.rb:35:in 'TasksController#create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT /*action='create',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/controllers/tasks_controller.rb:35:in 'TasksController#create'
+Redirected to http://localhost:3000/tasks
+↳ app/controllers/tasks_controller.rb:37:in 'TasksController#create'
+Completed 302 Found in 61ms (ActiveRecord: 53.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2026-08-31 11:25:41 +0500
+Processing by TasksController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "tasks" LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/index.html.erb:6
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:2
+  Rendered tasks/_task.html.erb (Duration: 2.0ms | GC: 0.0ms)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 3.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.5ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2026-08-31 11:26:33 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2026-08-31 11:26:48 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/tasks" for ::1 at 2026-08-31 11:26:50 +0500
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "tasks" LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/index.html.erb:6
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:2
+  Rendered tasks/_task.html.erb (Duration: 10.8ms | GC: 0.0ms)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 17.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 2.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 11:26:53 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/task-details" for ::1 at 2026-08-31 11:26:54 +0500
+Processing by TasksController#details as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/details.html.erb within layouts/application
+  Rendered tasks/details.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/task-details?query=task2&commit=Search" for ::1 at 2026-08-31 11:26:59 +0500
+Processing by TasksController#details as HTML
+  Parameters: {"query" => "task2", "commit" => "Search"}
+  [1m[36mTask Load (2.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."tittle" = 'task2' LIMIT 1 /*action='details',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/controllers/tasks_controller.rb:10:in 'TasksController#details'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/details.html.erb within layouts/application
+  Rendered tasks/details.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 2.9ms | ActiveRecord: 2.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(805014669356415840) /*application='TaskManagementApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TaskManagementApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TaskManagementApp'*/[0m
+Migrating to CreateUsers (20260831063629)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='TaskManagementApp'*/[0m
+  [1m[35m (75.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='TaskManagementApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260831063629') RETURNING "version" /*application='TaskManagementApp'*/[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT /*application='TaskManagementApp'*/[0m
+Migrating to AddUserToTasks (20260831063804)
+  [1m[36mTRANSACTION (40.9ms)[0m  [1m[35mBEGIN /*application='TaskManagementApp'*/[0m
+  [1m[35m (49.5ms)[0m  [1m[35mALTER TABLE "tasks" ADD "user_id" bigint NOT NULL /*application='TaskManagementApp'*/[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK /*application='TaskManagementApp'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(805014669356415840) /*application='TaskManagementApp'*/[0m
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(805014669356415840) /*application='TaskManagementApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TaskManagementApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TaskManagementApp'*/[0m
+Migrating to AddUserToTasks (20260831063804)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='TaskManagementApp'*/[0m
+  [1m[35m (43.7ms)[0m  [1m[35mALTER TABLE "tasks" ADD "user_id" bigint /*application='TaskManagementApp'*/[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE INDEX "index_tasks_on_user_id" ON "tasks" ("user_id") /*application='TaskManagementApp'*/[0m
+  [1m[35m (7.6ms)[0m  [1m[35mALTER TABLE "tasks" ADD CONSTRAINT "fk_rails_4d2a9e4d7e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+ /*application='TaskManagementApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260831063804') RETURNING "version" /*application='TaskManagementApp'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT /*application='TaskManagementApp'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(805014669356415840) /*application='TaskManagementApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TaskManagementApp'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='TaskManagementApp'*/[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[35mSET search_path TO "$user", public /*application='TaskManagementApp'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='TaskManagementApp'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO "$user", public /*application='TaskManagementApp'*/[0m
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*application='TaskManagementApp'*/[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ('Umer', 'umer@example.com', '2026-08-31 06:43:30.476957', '2026-08-31 06:43:30.476957') RETURNING "id" /*application='TaskManagementApp'*/[0m
+  [1m[36mTRANSACTION (38.2ms)[0m  [1m[35mCOMMIT /*application='TaskManagementApp'*/[0m
+  [1m[36mTask Update All (48.8ms)[0m  [1m[33mUPDATE "tasks" SET "user_id" = 1 /*application='TaskManagementApp'*/[0m
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(805014669356415840) /*application='TaskManagementApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TaskManagementApp'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='TaskManagementApp'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(805014669356415840) /*application='TaskManagementApp'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TaskManagementApp'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='TaskManagementApp'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO "$user", public /*application='TaskManagementApp'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='TaskManagementApp'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO "$user", public /*application='TaskManagementApp'*/[0m
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Started GET "/task-details?query=task2&commit=Search" for ::1 at 2026-08-31 11:53:40 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='TaskManagementApp'*/[0m
+Processing by TasksController#details as HTML
+  Parameters: {"query" => "task2", "commit" => "Search"}
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."tittle" = 'task2' LIMIT 1 /*action='details',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/controllers/tasks_controller.rb:10:in 'TasksController#details'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/details.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='details',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/details.html.erb:34
+  Rendered tasks/details.html.erb within layouts/application (Duration: 39.7ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 56.8ms | GC: 0.0ms)
+Completed 200 OK in 174ms (Views: 61.4ms | ActiveRecord: 13.2ms (2 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 11:53:43 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2026-08-31 11:53:44 +0500
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "tasks" LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/index.html.erb:6
+  [1m[36mTask Load (1.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  ↳ app/views/tasks/_task.html.erb:38
+  Rendered tasks/_task.html.erb (Duration: 10.1ms | GC: 0.0ms)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 12.9ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | GC: 0.0ms)
+Completed 200 OK in 18ms (Views: 13.0ms | ActiveRecord: 2.8ms (4 queries, 1 cached) | GC: 0.0ms)
+
+
+Started GET "/task-details" for ::1 at 2026-08-31 11:53:48 +0500
+Processing by TasksController#details as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/details.html.erb within layouts/application
+  Rendered tasks/details.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2026-08-31 11:53:48 +0500
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='new',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/new.html.erb:21
+  Rendered tasks/new.html.erb within layouts/application (Duration: 10.8ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 11:53:55 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2026-08-31 11:57:56 +0500
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "tasks" LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/index.html.erb:6
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  ↳ app/views/tasks/_task.html.erb:38
+  Rendered tasks/_task.html.erb (Duration: 7.9ms | GC: 0.0ms)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 10.7ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 1.2ms (4 queries, 1 cached) | GC: 0.0ms)
+
+
+Started GET "/task-details" for ::1 at 2026-08-31 11:58:15 +0500
+Processing by TasksController#details as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/details.html.erb within layouts/application
+  Rendered tasks/details.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2026-08-31 11:58:15 +0500
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "tasks" LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/index.html.erb:6
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:2
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  ↳ app/views/tasks/_task.html.erb:38
+  Rendered tasks/_task.html.erb (Duration: 8.2ms | GC: 0.0ms)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 10.8ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 1.7ms (4 queries, 1 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2026-08-31 11:58:16 +0500
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='new',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/new.html.erb:21
+  Rendered tasks/new.html.erb within layouts/application (Duration: 4.7ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/task-details" for ::1 at 2026-08-31 11:58:17 +0500
+Processing by TasksController#details as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/details.html.erb within layouts/application
+  Rendered tasks/details.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for ::1 at 2026-08-31 11:58:18 +0500
+Processing by TasksController#edit as HTML
+  Parameters: {"id" => "2"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 2 LIMIT 1 /*action='edit',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/controllers/tasks_controller.rb:18:in 'TasksController#edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 4.4ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/task-details" for ::1 at 2026-08-31 11:58:24 +0500
+Processing by TasksController#details as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/details.html.erb within layouts/application
+  Rendered tasks/details.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/task-details?query=task2&commit=Search" for ::1 at 2026-08-31 11:58:27 +0500
+Processing by TasksController#details as HTML
+  Parameters: {"query" => "task2", "commit" => "Search"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."tittle" = 'task2' LIMIT 1 /*action='details',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/controllers/tasks_controller.rb:10:in 'TasksController#details'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/details.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='details',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/details.html.erb:34
+  Rendered tasks/details.html.erb within layouts/application (Duration: 5.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks/new" for ::1 at 2026-08-31 11:58:29 +0500
+Processing by TasksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='new',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/new.html.erb:21
+  Rendered tasks/new.html.erb within layouts/application (Duration: 5.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 11:58:31 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 11:58:37 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks" for ::1 at 2026-08-31 11:58:39 +0500
+Processing by TasksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "tasks" LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/index.html.erb:6
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/views/tasks/_task.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  ↳ app/views/tasks/_task.html.erb:38
+  Rendered tasks/_task.html.erb (Duration: 9.1ms | GC: 0.0ms)
+  Rendered tasks/index.html.erb within layouts/application (Duration: 10.8ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 1.5ms (4 queries, 1 cached) | GC: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for ::1 at 2026-08-31 11:58:43 +0500
+Processing by TasksController#edit as HTML
+  Parameters: {"id" => "2"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = 2 LIMIT 1 /*action='edit',application='TaskManagementApp',controller='tasks'*/[0m
+  ↳ app/controllers/tasks_controller.rb:18:in 'TasksController#edit'
+  Rendering layout layouts/application.html.erb
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.4ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 12:02:01 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 12:02:02 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 12:02:55 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 12:02:56 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 12:02:58 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 12:02:58 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 12:02:59 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2026-08-31 12:03:00 +0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+

@@ -3,22 +3,25 @@
     <%= form.label :tittle, "Tittle" %>
     <%= form.text_field :tittle %>
   </div>
-
   <div>
     <%= form.label :description, "Description" %>
     <%= form.text_area :description %>
   </div>
-
   <div>
     <%= form.label :status, "Status" %>
     <%= form.select :status, ["in-progress", "pending", "completed"] %>
   </div>
-
   <div>
     <%= form.label :priority, "Priority" %>
     <%= form.select :priority, ["high", "medium", "low"] %>
   </div>
-
+  <div>
+    <%= form.label :user_id, "Task Owner" %>
+    <%= form.collection_select :user_id,
+        User.all,
+        :id,
+        :name,
+        prompt: "Select Task Owner" %>
+  </div>
   <%= form.submit "Create Task" %>
-
 <% end %>
