@@ -1,0 +1,43 @@
+<div class="edit-task-page">
+
+  <h1>Update Task</h1>
+
+  <%= form_with model: @task, class: "task-form" do |form| %>
+
+    <div>
+      <%= form.label :tittle, "Tittle" %>
+
+      <%= form.text_field :tittle,
+                          placeholder: "Enter task title" %>
+    </div>
+
+
+    <div>
+      <%= form.label :description, "Description" %>
+
+      <%= form.text_area :description,
+                         placeholder: "Enter task description" %>
+    </div>
+
+
+    <div>
+      <%= form.label :status, "Status" %>
+
+      <%= form.select :status,
+                      ["in-progress", "pending", "completed"] %>
+    </div>
+
+
+    <div>
+      <%= form.label :priority, "Priority" %>
+
+      <%= form.select :priority,
+                      ["high", "medium", "low"] %>
+    </div>
+
+
+    <%= form.submit "Update Task" %>
+
+  <% end %>
+
+</div>

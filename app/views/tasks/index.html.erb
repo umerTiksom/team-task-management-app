@@ -1,0 +1,20 @@
+<div class="task-list-page">
+
+  <h1>Task List</h1>
+
+  <% if @task.empty? %>
+
+    <div class="task-not-found">
+      <h2>No Tasks Found</h2>
+      <p>There are currently no tasks available.</p>
+    </div>
+
+  <% else %>
+
+    <div class="task-grid">
+      <%= render partial: "task" %>
+    </div>
+
+  <% end %>
+
+</div>
