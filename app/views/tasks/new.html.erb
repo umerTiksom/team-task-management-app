@@ -1,4 +1,14 @@
 <%= form_with model: @task, class: "task-form" do |form| %>
+  <% if @task.errors.any? %>
+    <div class="error-occur">
+      <h2><%= pluralize(@task.errors.count, "errors") %>Unable to save this task: </h2>
+      <ul>
+        <% @task.errors.full_messages.each do |msg| %>
+        <l1><%= msg %></l1>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   <div>
     <%= form.label :tittle, "Tittle" %>
     <%= form.text_field :tittle %>

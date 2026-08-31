@@ -37,7 +37,7 @@ class TasksController < ApplicationController
       redirect_to tasks_path
     else
       flash[:alert] = "Task not created!"
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
